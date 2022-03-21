@@ -1,1 +1,1 @@
-# My online webshop via Mongo DB Compass.
+# My online webshop via Mongo DB Database.
