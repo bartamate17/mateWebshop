@@ -1,0 +1,209 @@
+/*FONTS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IM+Fell+Double+Pica+SC&family=Lora:wght@500&family=Ranga&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(241, 17, 17, 0.6);
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 0 auto;
+    width: 85%;
+    background-color: antiquewhite;
+}
+
+
+/* FOCIM */
+
+.mainTitleDiv {
+    margin: 50px 0 30px 0;
+    width: 100%;
+}
+
+.headTitle {
+    margin: 0 auto !important;
+    text-transform: uppercase;
+    padding: 25px;
+    background-color: rgba(255, 193, 7, .8);
+    height: 100px;
+}
+
+.inputField {
+    margin: 0 10px 0 10px;
+}
+
+
+/* KÜLDÉS GOMB*/
+
+.subscribeButton {
+    margin: 0 0 0 20px;
+    width: 100px;
+    display: inline-block;
+    border-radius: 30px;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .9);
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+}
+
+.subscribeButton:hover {
+    background-color: black;
+    color: rgba(255, 193, 7, .8);
+    border-color: black;
+    display: inline-block;
+    animation: pulse;
+    animation-duration: 1s;
+}
+
+.subscribeButton:focus {
+    color: rgb(52, 58, 64);
+    text-shadow: 1px 1px 1px wheat;
+}
+
+
+/* LOGO */
+
+.imageLogoNav {
+    margin: 0 15px 0 0;
+}
+
+
+/* PRODUKTUM  */
+
+.card .read-more:hover {
+    font-size: 14px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+    z-index: 5000;
+}
+
+.card {
+    display: block;
+    border: 1px solid rgba(0, 0, 0, .7);
+    transition: .3s;
+    margin: 3rem;
+}
+
+.hover-btns {
+    display: flex;
+}
+
+#editProduct {
+    color: white;
+    background-color: rgb(52, 58, 64);
+    border-color: rgb(52, 58, 64);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .9);
+    border-radius: 15px 2px 15px 2px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.likeHead {
+    margin: 0 auto;
+    font-size: 25px;
+}
+
+#editProduct:hover {
+    background-color: black;
+    border-color: black;
+    color: yellow;
+}
+
+.productDescription {
+    margin: 10px 0 10px 0;
+}
+
+
+/* MODAL */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    min-height: 300px;
+}
+
+#modalError {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 992px) {
+    #editProduct {
+        font-size: 1.4vw;
+    }
+    .subscribeButton {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .headTitle {
+        font-size: 20px;
+        height: 80px;
+    }
+    #editProduct {
+        font-size: 1rem;
+    }
+    .d-flex {
+        display: block !important;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .subscribeButton {
+        width: 150px;
+        margin-top: 15px;
+    }
+    .unicodeStyle {
+        display: none;
+    }
+}
